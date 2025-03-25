@@ -10,6 +10,7 @@
   </synonym>
   <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="b846a666-f9e4-429f-a0b0-8fab0d217847"/>
   <defaultForm>ExternalDataProcessor.Extractor_1C_Clickhouse.Form.Форма</defaultForm>
+  <auxiliaryForm>ExternalDataProcessor.Extractor_1C_Clickhouse.Form.ФормаОбычная</auxiliaryForm>
   <attributes uuid="b9f7ffc6-5ca9-4da9-9f17-a35bad4151e6">
     <name>ДатаНачала</name>
     <synonym>
@@ -293,12 +294,59 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <tabularSections uuid="14a3a85e-bfb6-4f83-9dca-9fbe48880a0e">
+    <producedTypes>
+      <objectType typeId="20caaa12-291a-43d2-86da-d0c45b14c0de" valueTypeId="216051ab-d1a1-4b3e-a623-bf25cd0de75b"/>
+      <rowType typeId="9d15da7d-2c2d-4045-be2c-52c52375a5e0" valueTypeId="b19a8c4c-98b1-4d97-8629-afcae021c5c6"/>
+    </producedTypes>
+    <name>КомандыФоновые</name>
+    <synonym>
+      <key>ru</key>
+      <value>Команды фоновые</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="c955975c-99f4-4c68-9b32-88d3260a9d1a">
+      <name>Команда</name>
+      <synonym>
+        <key>ru</key>
+        <value>Команда</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
   <forms uuid="291288fd-a868-4c17-a63e-5df6c9111bbf">
     <name>Форма</name>
     <synonym>
       <key>ru</key>
       <value>Форма</value>
     </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="366b47b1-777c-44cd-abd8-d4e7da880420">
+    <name>ФормаОбычная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обычная</value>
+    </synonym>
+    <formType>Ordinary</formType>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
