@@ -71,6 +71,21 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="e7c7c1cb-1523-4058-b4a5-e4ae204f0a1b">
+    <name>ТипБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип базы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="22062a1f-fd1b-43ac-9903-14280495e2fe">
     <name>ИмяПользователя</name>
     <synonym>
@@ -350,4 +365,12 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <templates uuid="1b52d2cf-28ac-4bcc-ab25-33a50fe6bbb7">
+    <name>Скрипт_ВыполнитьPostgreSQL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скрипт выполнить postgre SQL</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
 </mdclass:ExternalDataProcessor>
