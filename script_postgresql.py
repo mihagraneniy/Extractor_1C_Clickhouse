@@ -1,7 +1,7 @@
 import sys
 import psycopg2
 
-debug = True
+debug = False
 pg_requests_0 = ""
 if debug:
     argv_filepath_requests = "C://Users//Ilya//AppData//Local//Temp//cc3b0fb3-9280-4c19-8ea5-c5fdbef0f242.txt"
@@ -41,10 +41,10 @@ if argv_type == 'get':
         for row in records:
             pg_commited = 1
         cursor.close()
-    except:
+    except Exception as e:
         #wait = input("Press Enter to continue.")
         results_file = open(argv_filepath_results, "w", encoding="utf-8")
-        results_file.write(str(exception))
+        results_file.write(str(e))
         results_file.close()
 
     conn.close()
@@ -58,10 +58,10 @@ if argv_type == 'post':
         #
         pg_commited = 1
         cursor.close()
-    except:
+    except Exception as e:
         #wait = input("Press Enter to continue.")
         results_file = open(argv_filepath_results, "w", encoding="utf-8")
-        results_file.write(str(exception))
+        results_file.write(str(e))
         results_file.close()
 
     conn.close()
@@ -69,4 +69,8 @@ if argv_type == 'post':
 if pg_commited == 1:
     results_file = open(argv_filepath_results, "w", encoding="utf-8")
     results_file.write("OK")
+    results_file.close()
+else:
+    results_file = open(argv_filepath_results, "w", encoding="utf-8")
+    results_file.write("ERROR")
     results_file.close()
