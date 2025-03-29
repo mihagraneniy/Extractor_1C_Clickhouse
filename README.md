@@ -69,6 +69,8 @@
 
 ### Установка
 
+Инструкция по установке обработки - <https://kimkarus.ru/2025/02/08/instrukciya-po-ustanovke-ekstraktor-dannyh-1s-v-clickhouse/>
+
 ### Настройка параметров
 
 Открываем обработку в режиме конфигуратора.

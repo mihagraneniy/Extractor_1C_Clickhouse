@@ -42,6 +42,7 @@ if argv_type == 'get':
             pg_commited = 1
         cursor.close()
     except Exception as e:
+        cursor.close()
         #wait = input("Press Enter to continue.")
         results_file = open(argv_filepath_results, "w", encoding="utf-8")
         results_file.write(str(e))
@@ -59,6 +60,7 @@ if argv_type == 'post':
         pg_commited = 1
         cursor.close()
     except Exception as e:
+        cursor.close()
         #wait = input("Press Enter to continue.")
         results_file = open(argv_filepath_results, "w", encoding="utf-8")
         results_file.write(str(e))
@@ -69,4 +71,8 @@ if argv_type == 'post':
 if pg_commited == 1:
     results_file = open(argv_filepath_results, "w", encoding="utf-8")
     results_file.write("OK")
+    results_file.close()
+else:
+    results_file = open(argv_filepath_results, "w", encoding="utf-8")
+    results_file.write("ERROR")
     results_file.close()

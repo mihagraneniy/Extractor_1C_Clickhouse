@@ -70,7 +70,3 @@ if pg_commited == 1:
     results_file = open(argv_filepath_results, "w", encoding="utf-8")
     results_file.write("OK")
     results_file.close()
-else:
-    results_file = open(argv_filepath_results, "w", encoding="utf-8")
-    results_file.write("ERROR")
-    results_file.close()
