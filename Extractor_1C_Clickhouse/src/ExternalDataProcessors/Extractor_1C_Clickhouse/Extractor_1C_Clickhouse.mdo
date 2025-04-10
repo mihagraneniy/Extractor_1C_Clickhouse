@@ -388,4 +388,12 @@
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
+  <templates uuid="33b562b2-dd04-4ab4-b743-457af59d9546">
+    <name>Скрипт_ВыполнитьMySQL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скрипт выполнить my SQL</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
 </mdclass:ExternalDataProcessor>

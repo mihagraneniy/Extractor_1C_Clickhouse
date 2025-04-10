@@ -275,6 +275,15 @@
                 <value>PostgreSQL</value>
               </value>
             </choiceList>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>MySQL</value>
+              </presentation>
+              <value xsi:type="core:StringValue">
+                <value>MySQL</value>
+              </value>
+            </choiceList>
           </extInfo>
         </items>
         <visible>true</visible>
