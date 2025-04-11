@@ -51,8 +51,7 @@ if argv_type == 'get':
 
     conn.close()
 if argv_type == 'get_json':
-    #from psycopg2.extras import DictCursor
-    cursor = conn.cursor(cursor_factory=DictCursor)
+    cursor = conn.cursor(dictionary=True)
     # run pg_requests
     try:
         cursor.execute(pg_requests_0)
