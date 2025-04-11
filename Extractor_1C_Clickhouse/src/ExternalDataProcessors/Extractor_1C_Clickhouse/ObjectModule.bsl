@@ -1717,6 +1717,7 @@
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 10-04-2025 18:30 end
 
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 start
+//@skip-check module-accessibility-at-client
 Функция ЗапуститьПриложениеPythonНаСервере(ИмяФункции, ПараметрыЗапуска = "", АбсолютныйПутьPython)
 	
 	Перем КодВозврата;

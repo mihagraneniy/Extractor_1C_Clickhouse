@@ -1,7 +1,7 @@
 import sys
 import mysql.connector
 
-debug = True
+debug = False
 pg_requests_0 = ""
 if debug:
     argv_filepath_requests = "C://Users//Ilya//AppData//Local//Temp//93777315-c1a0-4adb-90e8-76ad75f92dfb.txt"
