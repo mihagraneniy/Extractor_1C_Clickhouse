@@ -324,6 +324,18 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="34c91d76-4764-424a-8a0c-217e732c4313">
+    <name>ИспользоватьДополнительныеКлючи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать дополнительные ключи</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="14a3a85e-bfb6-4f83-9dca-9fbe48880a0e">
     <producedTypes>
       <objectType typeId="20caaa12-291a-43d2-86da-d0c45b14c0de" valueTypeId="216051ab-d1a1-4b3e-a623-bf25cd0de75b"/>
