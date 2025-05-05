@@ -517,6 +517,32 @@
       <maxValue xsi:type="core:UndefinedValue"/>
     </attributes>
   </tabularSections>
+  <tabularSections uuid="65e7144a-59ae-4cf1-a1ef-023800c35aa2">
+    <producedTypes>
+      <objectType typeId="b9b19e81-1b3f-4631-acfc-863aebb15ffe" valueTypeId="788947f6-fa92-401e-8bd2-1ac5580db0c5"/>
+      <rowType typeId="daf8379e-7d28-4a22-8ec6-54b43cc99a73" valueTypeId="ed89d46b-ac47-43ff-ab7b-84d58efc73d2"/>
+    </producedTypes>
+    <name>ДополнительныеКлючи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные ключи</value>
+    </synonym>
+    <attributes uuid="13f06436-dbda-47b9-b840-34757fbdbeaf">
+      <name>ИмяКолонки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя колонки</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>25</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
   <forms uuid="291288fd-a868-4c17-a63e-5df6c9111bbf">
     <name>Форма</name>
     <synonym>
