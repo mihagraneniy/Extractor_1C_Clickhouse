@@ -116,21 +116,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="b33f3428-ac29-427e-98f9-fec2601d5197">
-    <name>ИмяТаблицы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Имя таблицы</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>255</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
   <attributes uuid="0631c4cc-eb92-4757-b179-f98b1a523337">
     <name>Логин</name>
     <synonym>
@@ -172,6 +157,63 @@
       <numberQualifiers>
         <precision>10</precision>
       </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6e291ef9-b120-44a8-9334-88f52e1a1ec1">
+    <name>ЭтоЗащищенноеСоединение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это защищенное соединение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3bd13218-4d49-494f-8bd8-7523fc437896">
+    <name>ПутьДоСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь до сертификата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="75341082-3ef7-4c7c-b3cc-348f200edf61">
+    <name>АбсолютныйПутьPython</name>
+    <synonym>
+      <key>ru</key>
+      <value>Абсолютный путь python</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b33f3428-ac29-427e-98f9-fec2601d5197">
+    <name>ИмяТаблицы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя таблицы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -255,18 +297,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="6e291ef9-b120-44a8-9334-88f52e1a1ec1">
-    <name>ЭтоЗащищенноеСоединение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Это защищенное соединение</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
   <attributes uuid="6ec68707-45c0-41ea-98aa-849f200d3e27">
     <name>Периодичность</name>
     <synonym>
@@ -282,21 +312,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="3bd13218-4d49-494f-8bd8-7523fc437896">
-    <name>ПутьДоСертификата</name>
-    <synonym>
-      <key>ru</key>
-      <value>Путь до сертификата</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>150</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
   <attributes uuid="1ba98619-deba-49dd-af66-b9295972acf9">
     <name>ИспользоватьПериодВКлюче</name>
     <synonym>
@@ -305,21 +320,6 @@
     </synonym>
     <type>
       <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="75341082-3ef7-4c7c-b3cc-348f200edf61">
-    <name>АбсолютныйПутьPython</name>
-    <synonym>
-      <key>ru</key>
-      <value>Абсолютный путь python</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>255</length>
-      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -371,6 +371,150 @@
       <fillValue xsi:type="core:StringValue">
         <value></value>
       </fillValue>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="0b2bddce-1429-44cb-b5a5-fb7d2e48c821">
+    <producedTypes>
+      <objectType typeId="1e0d3ad5-4687-4c77-92d8-4909be9af5e0" valueTypeId="1d9977e2-cb8f-4af0-913c-9ddab9c7bcaf"/>
+      <rowType typeId="ffc0a6db-a87a-472c-9306-843e542f1e28" valueTypeId="b3f2dcd5-29b7-4182-b319-40e0a80cf0db"/>
+    </producedTypes>
+    <name>НастройкиЗапросов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки запросов</value>
+    </synonym>
+    <attributes uuid="8efb80b5-1ff0-4faf-be85-c0a7ce21d538">
+      <name>ИмяТаблицы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя таблицы</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a1155254-ab4f-45b1-8af0-b261fc4c36e7">
+      <name>ПроверитьТаблицу</name>
+      <synonym>
+        <key>ru</key>
+        <value>Проверить таблицу</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b07d6377-3679-4260-8387-6f969dc37d08">
+      <name>ТекстЗапроса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текст запроса</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ffad58f9-7f72-4dbf-adc1-ce3d01562209">
+      <name>ЭтоТекущаяДата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Это текущая дата</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2277d6c6-221e-441a-b99e-0fdad7b4eae2">
+      <name>КоличествоДнейНазад</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество дней назад</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c78ca2bd-dd93-4596-b9ff-70f735658027">
+      <name>КоличествоВПортиции</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество в портиции</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a83ec015-82ab-4b1d-95a9-5b2ceb080e6b">
+      <name>ОднимФайлом</name>
+      <synonym>
+        <key>ru</key>
+        <value>Одним файлом</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="349c1bc8-087c-40b1-9013-ea4c6cdf4cad">
+      <name>Периодичность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Периодичность</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="988a2718-13e1-4389-b79b-f775d05f9fa7">
+      <name>ИспользоватьПериодВКлюче</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использовать период в ключе</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="cc0d2903-e268-462a-be88-4e054aa4f33c">
+      <name>ИспользоватьДополнительныеКлючи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использовать дополнительные ключи</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
     </attributes>
   </tabularSections>
   <forms uuid="291288fd-a868-4c17-a63e-5df6c9111bbf">
