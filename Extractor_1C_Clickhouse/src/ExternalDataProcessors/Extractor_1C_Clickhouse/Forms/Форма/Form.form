@@ -353,6 +353,10 @@
             <dataPath xsi:type="form:DataPath">
               <segments>Объект.ЭтоЗащищенноеСоединение</segments>
             </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ЭтоЗащищенноеСоединениеПриИзменении</name>
+            </handlers>
             <extendedTooltip>
               <name>ЭтоЗащищенноеСоединениеРасширеннаяПодсказка</name>
               <id>94</id>
