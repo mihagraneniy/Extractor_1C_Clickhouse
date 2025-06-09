@@ -298,15 +298,6 @@
                   <value>MySQL</value>
                 </value>
               </choiceList>
-              <choiceList>
-                <presentation>
-                  <key>ru</key>
-                  <value>REST</value>
-                </presentation>
-                <value xsi:type="core:StringValue">
-                  <value>REST</value>
-                </value>
-              </choiceList>
             </extInfo>
           </items>
           <visible>true</visible>
