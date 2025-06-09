@@ -1,4 +1,4 @@
-# Экстрактор данных 1С в базу данных ClickHouseDB, PostgreSQL / Extractor 1C Clickhouse, PostgreSQL
+# Экстрактор данных 1С в базу данных ClickHouseDB, PostgreSQL и MySQL / Extractor 1C Clickhouse, PostgreSQL and MySQL
 
 ## Название
 
