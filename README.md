@@ -6,8 +6,6 @@
 
 Экстрактор данных 1С в ClickHouseDB, PostgreSQL, MySQL, REST
 
-![image.png](.attachments.3509/image.png)
-
 <https://kimkarus.ru/2024/02/12/instrukciya-polzovatelya/>
 
 <https://github.com/kimkarus/Extractor_1C_Clickhouse>
