@@ -1,8 +1,8 @@
 # Экстрактор данных 1С в базу данных ClickHouseDB, PostgreSQL, MySQL и REST / Extractor 1C Clickhouse, PostgreSQ, MySQL and REST
 
-## Название
+Коммерческая версия => <https://kimkarus.ru/product/ekstraktor-dannyh-1s-v-clickhousedb-postgresql-i-mysql/>
 
-Коммерческая версия => <https://infostart.ru/marketplace/1970328/>
+или у партнера => <https://infostart.ru/marketplace/1970328/>
 
 Экстрактор данных 1С в ClickHouseDB, PostgreSQL, MySQL, REST
 
