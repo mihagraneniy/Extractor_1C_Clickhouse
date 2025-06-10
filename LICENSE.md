@@ -1,6 +1,5 @@
 10.08.2024
 Как автор, даю согласие на персональное использование и использование в любых проектах с ссылкой на автора, 
-не разрешаю распространять  скомпилированный и открытый код полностью или частично за денежное вознаграждение без письменного согласия автора. 
+не разрешаю распространять  скомпилированный и открытый код полностью или частично за денежное вознаграждение или в коммерческих целях с какой0либо выгодой без письменного согласия автора. 
 
-As the author, I agree to personal use and use in any projects with reference to the author, 
-I do not allow distribution of the compiled and open source code in whole or in part for monetary compensation without the written consent of the author.
+As the author, I agree to personal use and use in any projects with a link to the author, I do not allow the distribution of compiled and open source code in whole or in part for monetary compensation or for commercial purposes with any benefit without the written consent of the author.
