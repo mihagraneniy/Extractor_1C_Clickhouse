@@ -348,6 +348,21 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="6957f44e-f34d-421d-b6d5-0d09039aeb84">
+    <name>ДополнительныеКлючи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные ключи</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="14a3a85e-bfb6-4f83-9dca-9fbe48880a0e">
     <producedTypes>
       <objectType typeId="20caaa12-291a-43d2-86da-d0c45b14c0de" valueTypeId="216051ab-d1a1-4b3e-a623-bf25cd0de75b"/>
@@ -528,16 +543,31 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
     </attributes>
+    <attributes uuid="ad0d738e-48b8-4977-9045-7e1418f5d57f">
+      <name>ДополнительныеКлючи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дополнительные ключи</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="65e7144a-59ae-4cf1-a1ef-023800c35aa2">
     <producedTypes>
       <objectType typeId="b9b19e81-1b3f-4631-acfc-863aebb15ffe" valueTypeId="788947f6-fa92-401e-8bd2-1ac5580db0c5"/>
       <rowType typeId="daf8379e-7d28-4a22-8ec6-54b43cc99a73" valueTypeId="ed89d46b-ac47-43ff-ab7b-84d58efc73d2"/>
     </producedTypes>
-    <name>ДополнительныеКлючи</name>
+    <name>ТаблицаДополнительныеКлючи</name>
     <synonym>
       <key>ru</key>
-      <value>Дополнительные ключи</value>
+      <value>Таблица дополнительные ключи</value>
     </synonym>
     <attributes uuid="13f06436-dbda-47b9-b840-34757fbdbeaf">
       <name>ИмяКолонки</name>
