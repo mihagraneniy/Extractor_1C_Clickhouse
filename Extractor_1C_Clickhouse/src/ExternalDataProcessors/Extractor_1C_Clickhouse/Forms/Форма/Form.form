@@ -2767,16 +2767,16 @@
             <segments>Объект.ТаблицаДополнительныеКлючи</segments>
           </dataPath>
           <titleLocation>None</titleLocation>
-          <excludedCommands>SearchEverywhere</excludedCommands>
-          <excludedCommands>Find</excludedCommands>
           <excludedCommands>CancelSearch</excludedCommands>
+          <excludedCommands>EndEdit</excludedCommands>
+          <excludedCommands>Find</excludedCommands>
           <excludedCommands>FindByCurrentValue</excludedCommands>
-          <excludedCommands>SortListAsc</excludedCommands>
-          <excludedCommands>SortListDesc</excludedCommands>
           <excludedCommands>MoveDown</excludedCommands>
           <excludedCommands>MoveUp</excludedCommands>
+          <excludedCommands>SearchEverywhere</excludedCommands>
           <excludedCommands>ShowRowRearrangement</excludedCommands>
-          <excludedCommands>EndEdit</excludedCommands>
+          <excludedCommands>SortListAsc</excludedCommands>
+          <excludedCommands>SortListDesc</excludedCommands>
           <items xsi:type="form:FormField">
             <name>ДополнительныеКлючиИмяКолонки</name>
             <id>198</id>
