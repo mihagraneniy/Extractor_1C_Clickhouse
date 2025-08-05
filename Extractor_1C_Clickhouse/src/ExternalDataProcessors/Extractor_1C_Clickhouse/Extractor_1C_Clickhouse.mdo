@@ -399,6 +399,21 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="2002e285-5ef8-475b-a714-89a1a059e794">
+    <name>ФорматДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формат данных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="14a3a85e-bfb6-4f83-9dca-9fbe48880a0e">
     <producedTypes>
       <objectType typeId="20caaa12-291a-43d2-86da-d0c45b14c0de" valueTypeId="216051ab-d1a1-4b3e-a623-bf25cd0de75b"/>

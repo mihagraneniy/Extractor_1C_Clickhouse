@@ -168,7 +168,7 @@
         <name>НастройкиБазы</name>
         <id>117</id>
         <items xsi:type="form:FormGroup">
-          <name>НастройкиБазыИмяТип</name>
+          <name>НастройкиБазыИмяТипФормат</name>
           <id>123</id>
           <items xsi:type="form:FormField">
             <name>ИмяБазы</name>
@@ -325,6 +325,62 @@
               </choiceList>
             </extInfo>
           </items>
+          <items xsi:type="form:FormField">
+            <name>ФорматДанных</name>
+            <id>241</id>
+            <title>
+              <key>ru</key>
+              <value>Формат</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.ФорматДанных</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>ФорматДанныхРасширеннаяПодсказка</name>
+              <id>243</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ФорматДанныхКонтекстноеМеню</name>
+              <id>242</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <width>10</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <listChoiceMode>true</listChoiceMode>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -332,10 +388,10 @@
           </userVisible>
           <title>
             <key>ru</key>
-            <value>Настройки базы имя тип</value>
+            <value>Настройки базы имя тип формат</value>
           </title>
           <extendedTooltip>
-            <name>НастройкиБазыИмяТипРасширеннаяПодсказка</name>
+            <name>НастройкиБазыИмяТипФорматРасширеннаяПодсказка</name>
             <id>124</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1810,24 +1866,115 @@
           <currentRowUse>Auto</currentRowUse>
         </extInfo>
       </items>
-      <items xsi:type="form:FormField">
-        <name>ИспользоватьПериодВКлюче</name>
-        <id>101</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаНастройкаКлючей</name>
+        <id>239</id>
+        <items xsi:type="form:FormField">
+          <name>ИспользоватьПериодВКлюче</name>
+          <id>101</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.ИспользоватьПериодВКлюче</segments>
+          </dataPath>
+          <toolTip>
+            <key>ru</key>
+            <value>В момент создания таблицы вставляет ключевое поле &quot;Период&quot;</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ИспользоватьПериодВКлючеРасширеннаяПодсказка</name>
+            <id>103</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ИспользоватьПериодВКлючеКонтекстноеМеню</name>
+            <id>102</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ИспользоватьДополнительныеКлючи</name>
+          <id>114</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.ИспользоватьДополнительныеКлючи</segments>
+          </dataPath>
+          <toolTip>
+            <key>ru</key>
+            <value>В момнт создания таблицы дополняет ключвые поля из таблицы &quot;Дполнительные ключи&quot;</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ИспользоватьДополнительныеКлючиРасширеннаяПодсказка</name>
+            <id>116</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ИспользоватьДополнительныеКлючиКонтекстноеМеню</name>
+            <id>115</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.ИспользоватьПериодВКлюче</segments>
-        </dataPath>
-        <toolTip>
+        <title>
           <key>ru</key>
-          <value>В момент создания таблицы вставляет ключевое поле &quot;Период&quot;</value>
-        </toolTip>
+          <value>Группа2</value>
+        </title>
         <extendedTooltip>
-          <name>ИспользоватьПериодВКлючеРасширеннаяПодсказка</name>
-          <id>103</id>
+          <name>ГруппаНастройкаКлючейРасширеннаяПодсказка</name>
+          <id>240</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -1840,69 +1987,15 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <contextMenu>
-          <name>ИспользоватьПериодВКлючеКонтекстноеМеню</name>
-          <id>102</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>CheckBoxField</type>
-        <editMode>Enter</editMode>
-        <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
-        <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-      </items>
-      <items xsi:type="form:FormField">
-        <name>ИспользоватьДополнительныеКлючи</name>
-        <id>114</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.ИспользоватьДополнительныеКлючи</segments>
-        </dataPath>
-        <toolTip>
-          <key>ru</key>
-          <value>В момнт создания таблицы дополняет ключвые поля из таблицы &quot;Дполнительные ключи&quot;</value>
-        </toolTip>
-        <extendedTooltip>
-          <name>ИспользоватьДополнительныеКлючиРасширеннаяПодсказка</name>
-          <id>116</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <contextMenu>
-          <name>ИспользоватьДополнительныеКлючиКонтекстноеМеню</name>
-          <id>115</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>CheckBoxField</type>
-        <editMode>Enter</editMode>
-        <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
-        <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <behavior>Auto</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
       </items>
       <items xsi:type="form:FormGroup">
         <name>ГруппаКоличествоДнейНазад</name>
