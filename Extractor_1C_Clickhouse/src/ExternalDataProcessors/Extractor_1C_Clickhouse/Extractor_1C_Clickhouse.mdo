@@ -414,6 +414,18 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="a9d87dd5-bde7-4287-9f2d-ce942055ccf3">
+    <name>ИспользоватьСтрокиКакКлючи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать строки как ключи</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="14a3a85e-bfb6-4f83-9dca-9fbe48880a0e">
     <producedTypes>
       <objectType typeId="20caaa12-291a-43d2-86da-d0c45b14c0de" valueTypeId="216051ab-d1a1-4b3e-a623-bf25cd0de75b"/>
@@ -635,6 +647,57 @@
       <fillValue xsi:type="core:StringValue">
         <value></value>
       </fillValue>
+    </attributes>
+    <attributes uuid="17d37f4b-f8a0-4041-8b63-f79d0384cf6a">
+      <name>ФорматДанных</name>
+      <synonym>
+        <key>ru</key>
+        <value>Формат данных</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="eea63b12-c40c-41b7-b2be-5de38c321419">
+      <name>ИспользоватьСтрокиКакКлючи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использовать строки как ключи</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e5285d48-ed2d-4dba-95ae-779a843fd813">
+      <name>ОтключитьКоличествоДнейНазад</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отключить количество дней назад</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c0e3a004-434c-4cde-840c-c3514957aed7">
+      <name>КаждаяПортицияВСвоемФоне</name>
+      <synonym>
+        <key>ru</key>
+        <value>Каждая портиция в своем фоне</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
     </attributes>
   </tabularSections>
   <tabularSections uuid="65e7144a-59ae-4cf1-a1ef-023800c35aa2">
